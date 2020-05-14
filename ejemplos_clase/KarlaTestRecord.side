@@ -1,0 +1,84 @@
+{
+  "id": "b359f953-055c-46b2-a7f7-9dbb9c5f70c5",
+  "version": "2.0",
+  "name": "KarlaTestRecord",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "1f0061a4-2d85-4870-a606-2ebcd841969a",
+    "name": "KarlaTestFindingNemo",
+    "commands": [{
+      "id": "47a1d4b7-7241-4f29-904b-3b2dc2272574",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "948b0e4a-089d-441a-a23e-d216d77e9886",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1619x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c4423fc-4daf-424b-970c-8897673b97e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ed522f0-dc87-477e-a857-6d78f4592784",
+      "comment": "",
+      "command": "type",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "finding nemo"
+    }, {
+      "id": "59411a2e-0fb9-4f40-b400-3d7cd674defc",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "096695b4-92cb-410d-bcd6-7ae5590d690e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Finding Nemo",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4a04ff1f-96fc-4b26-8979-e1f4242d947a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1f0061a4-2d85-4870-a606-2ebcd841969a"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
